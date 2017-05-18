@@ -1,6 +1,13 @@
-python-targets:
-    - 3
 pep8:
-    full: true
+  full: true
+
 uses:
-    - flask
+  - flask
+
+autodetect: true
+
+requirements:
+  - requirements.txt
+
+python-targets:
+  - 3

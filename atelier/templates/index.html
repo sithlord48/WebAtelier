@@ -48,41 +48,33 @@
         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
           <div class="service" data-height="height">
             <div class="service-element">
-              <i class="service-icon icon-chemistry"></i>
+              <i class="service-icon fa fa-code"></i>
             </div>
             <div class="service-info">
               <h3>Art Of Coding</h3>
-              <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+              <p class="margin-b-5">Using the best skills of programming to give you confidence</p>
             </div>
-            <a href="#" class="content-wrapper-link"></a>
           </div>
         </div>
       </div>
       <div class="col-sm-4 sm-margin-b-2">
         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
           <div class="service" data-height="height">
-            <div class="service-element">
-              <i class="service-icon icon-screen-tablet"></i>
-            </div>
             <div class="service-info">
               <h3>C++</h3>
-              <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+              <p class="margin-b-5">"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off." Bjarne Stroustrup</p>
             </div>
-            <a href="#" class="content-wrapper-link"></a>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
           <div class="service" data-height="height">
-            <div class="service-element">
-              <i class="service-icon icon-badge"></i>
-            </div>
             <div class="service-info">
               <h3>Qt</h3>
-              <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+              <p class="margin-b-5">Cross-platform development with Qt is the faster, smarter way to create innovative UIs, applications & embedded devices. </p>
             </div>
-            <a href="#" class="content-wrapper-link"></a>
+            <a href="https://qt.io" class="content-wrapper-link"></a>
           </div>
         </div>
       </div>
@@ -98,9 +90,9 @@
             </div>
             <div class="service-info">
               <h3>Useful Documentation</h3>
-              <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+              <p class="margin-b-5">Documentation simple and clean to guide you step by step.</p>
             </div>
-            <a href="#" class="content-wrapper-link"></a>
+            <a href="{{ url_for('documentation') }}" class="content-wrapper-link"></a>
           </div>
         </div>
       </div>
@@ -108,13 +100,12 @@
         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
           <div class="service" data-height="height">
             <div class="service-element">
-              <i class="service-icon icon-speedometer"></i>
+              <i class="service-icon fa fa-lock"></i>
             </div>
             <div class="service-info">
               <h3>Security</h3>
-              <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+              <p class="margin-b-5">Preventing your 3DPrinter from malfunctions.</p>
             </div>
-            <a href="#" class="content-wrapper-link"></a>
           </div>
         </div>
       </div>
@@ -122,13 +113,13 @@
         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
           <div class="service" data-height="height">
             <div class="service-element">
-              <i class="service-icon icon-badge"></i>
+              <i class="service-icon fa fa-desktop"></i>
             </div>
             <div class="service-info">
               <h3>Compatibility</h3>
-              <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+              <p class="margin-b-5">Linux, Windows and MacOS: Portability is our goal.</p>
             </div>
-            <a href="#" class="content-wrapper-link"></a>
+            <a href="{{ url_for('download') }}" class="content-wrapper-link"></a>
           </div>
         </div>
       </div>
@@ -166,20 +157,7 @@
     <div class="col-sm-4 sm-margin-b-50">
       <div class="margin-b-20">
         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-          <img class="img-responsive" src="{{ url_for('static', filename='img/970x647/02.jpg') }}" alt="Latest Products Image">
-        </div>
-      </div>
-      <h4><a href="#">Atelier Advanced</a> <span class="text-uppercase margin-l-20">Advanced Client</span></h4>
-      <p>Atelier Advanced is a client of AtCore with the basic features that you need to control your 3DPrinter.</p>
-      <a class="link" href="#">Read More</a>
-    </div>
-    <!-- End Latest Products -->
-
-    <!-- Latest Products -->
-    <div class="col-sm-4 sm-margin-b-50">
-      <div class="margin-b-20">
-        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-          <img class="img-responsive" src="{{ url_for('static', filename='img/970x647/03.jpg') }}" alt="Latest Products Image">
+          <img class="img-responsive" src="{{ url_for('static', filename='img/atelierlogo/1920x1080.png') }}" alt="Latest Products Image">
         </div>
       </div>
       <h4><a href="#">Atelier</a> <span class="text-uppercase margin-l-20">Client</span></h4>

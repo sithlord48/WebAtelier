@@ -1,0 +1,73 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+  <br/>
+  <div class="content-lg container">
+    <div class="row margin-b-20">
+      <div class="col-sm-6">
+        <h2>About</h2>
+      </div>
+    </div>
+    <!--// end row -->
+
+    <div class="row">
+      <div class="col-sm-7 sm-margin-b-50">
+        <div class="margin-b-30">
+          <p>Atelier is a project that started on August of 2016 with the goal to give a better open source solution on 3DPrinting for printer hosts. Inspired by the maker spirit we started to build this new solution. With a modern interface, security and
+            reliability.
+          </p>
+        </div>
+        <p>With the help of KDE Community we are on the road to give you the best experience on using a printer host, either for printing or maintance.</p>
+      </div>
+      <div class="col-sm-4 col-sm-offset-1">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/640x380/01.jpg') }}" alt="Our Office">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7 sm-margin-b-50">
+        <div class="margin-b-30">
+          <h2>Developers</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7 sm-margin-b-50">
+        <div class="margin-b-30">
+          <h2>Lays Rodrigues</h2>
+          <p>Put info here</p>
+        </div>
+      </div>
+      <div class="col-sm-4 col-sm-offset-1">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/640x380/01.jpg') }}" alt="Our Office">
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-sm-7 sm-margin-b-50">
+        <div class="margin-b-30">
+          <h2>Patrick Pereira</h2>
+          <p>Put info here</p>
+        </div>
+      </div>
+      <div class="col-sm-4 col-sm-offset-1">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/640x380/01.jpg') }}" alt="Our Office">
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-sm-7 sm-margin-b-50">
+        <div class="margin-b-30">
+          <h2>Chris Rizitello</h2>
+          <p>Put info here</p>
+        </div>
+      </div>
+      <div class="col-sm-4 col-sm-offset-1">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/640x380/01.jpg') }}" alt="Our Office">
+      </div>
+    </div>
+  </div>
+  <!-- End About -->
+</div>
+{% endblock content %}

@@ -9,7 +9,7 @@ notifications:
   email: false
   irc:
     channels:
-      - "chat.freenode.net#kde-atelier"
+      - "irc.freenode.net:6667#kde-atelier"
     on_success: change
     on_failure: always
     use_notice: true

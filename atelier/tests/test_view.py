@@ -1,5 +1,5 @@
 import unittest
-from atelier import app
+from atelier.atelier import app
 
 class TestView(unittest.TestCase):
         def setUp(self):

@@ -8,7 +8,7 @@ setup(
     author='Lays Rodrigues',
     author_email='laysrodriguessilva@gmail.com',
     license='GPLV3',
-    packages=find_packages()
+    packages=['atelier'],
     install_requires=[
         'flask'
     ],

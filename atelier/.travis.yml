@@ -1,0 +1,14 @@
+language: python
+python:
+    - "3.6"
+install: "pip install -r requirements.txt"
+
+notifications:
+  email: false
+  irc:
+    channels:
+      - "chat.freenode.net#kde-atelier"
+    on_success: change
+    on_failure: always
+    use_notice: true
+    skip_join: true

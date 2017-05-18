@@ -18,6 +18,10 @@ def about():
 def blog():
     return render_template('blog.html')
 
+@app.route('/download')
+def download():
+    return render_template('download.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)

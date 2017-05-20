@@ -38,7 +38,7 @@ p {
   font-size: 15px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: #a6a7aa;
+  color: #515769;
   line-height: 1.4;
   margin-bottom: 15px;
 }
@@ -54,7 +54,7 @@ li a {
 
 a {
   font-family: Hind, sans-serif;
-  color: #81848f;
+  color: #515769;
   outline: 0;
 }
 
@@ -281,97 +281,6 @@ fieldset[disabled] .btn-theme {
   font-size: 13px;
   font-weight: 600;
   padding: 15px 30px;
-}
-
-/*------------------------------------------------------------------
-  	[Pricing]
-------------------------------------------------------------------*/
-.pricing {
-  padding: 70px 45px;
-  background: #fff;
-  margin-top: 50px;
-}
-
-@media (max-width: 768px) {
-  .pricing {
-    margin-top: 0;
-  }
-}
-
-.pricing.pricing-active {
-  padding-top: 110px;
-  padding-bottom: 110px;
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  .pricing.pricing-active {
-    margin-top: 0;
-  }
-}
-
-.pricing .pricing-icon {
-  display: block;
-  font-size: 30px;
-  color: #999caa;
-  margin-bottom: 30px;
-}
-
-.pricing .pricing-list-item {
-  position: relative;
-  font-size: 13px;
-  color: #81848f;
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-
-.pricing .pricing-list-item:before {
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 9px;
-  height: 2px;
-  background: #17bed2;
-  content: " ";
-  margin-right: 10px;
-}
-
-/*------------------------------------------------------------------
-  	[Promo Section]
-------------------------------------------------------------------*/
-@media (max-width: 991px) {
-  .promo-section .promo-section-col {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-
-@media (min-width: 992px) {
-  .promo-section {
-    position: relative;
-    height: 400px;
-  }
-  .promo-section .promo-section-col {
-    width: 45%;
-  }
-  .promo-section .promo-section-img-left {
-    position: absolute;
-    top: 0;
-    right: 50%;
-  }
-  .promo-section .promo-section-img-right {
-    position: absolute;
-    top: 0;
-    left: 50%;
-  }
-  .promo-section .ver-center {
-    display: table;
-    height: 400px;
-  }
-  .promo-section .ver-center-aligned {
-    display: table-cell;
-    vertical-align: middle;
-  }
 }
 
 /*------------------------------------------------------------------
@@ -1243,7 +1152,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-md {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 

@@ -1,10 +1,127 @@
 {% extends "base.html" %} {% block content %}
 <br/>
 <div class="content-lg container">
-  <div class="row margin-b-20">
-    <div class="col-sm-6">
-      <h2>Documentation</h2>
-    </div>
+  <div class="col-sm-10">
+    <h2><i class="fa fa-book"></i> Documentation</h2>
   </div>
+</div>
+<div class="content-md container">
+  <div class="col-sm-10">
+    <h2>AtCore</h2>
+    <p>AtCore is the API that all the work on serial communication. We work with the thinking were every firmware is a plugin where we handle the small differences between them.</p>
+    <div id="atcore-intro">
+      <h3>Introduction</3>
+      <p>Inside AtCore we have a dictionary with all the GCode commands and that they do when called. So far we implemented methods that handle the most used GCode commands.</p>
+      <p>The below snniped of code show one method that we use on logging, where every command sent has it's own string.</p>
+      <pre class="lang=cpp prettyprint">
+        QString GCode::toString(GCommands gcode) {
+          switch (gcode) {
+            case G0://Teacup - Sprinter - Marlin - Repetier - Smoothie - RepRap Firmware - MakerBot
+              return QObject::tr("G0: Rapid linear move");
+            case G1://Teacup - Sprinter - Marlin - Repetier - Smoothie - RepRap Firmware
+              return QObject::tr("G1: Linear move");
+          ...
+          }
+        }
+      </pre>
+      <p>The next snip of code is the formated GCode that will be pushed through the serial port. If the GCode needs some parameter, we format it and return the complete string to be pushed</p>
+      <pre class="lang=cpp prettyprint">
+       QString GCode::toCommand(GCommands gcode, const QString &value1) {
+              switch (gcode) {
+                case G0: {
+                    if (value1.isEmpty()) {
+                        return QStringLiteral("G0");
+                    } else {
+                        return QStringLiteral("G0 %1").arg(value1.toUpper());
+                    }
+                }
+                case G1: {
+                    if (value1.isEmpty()) {
+                        return QStringLiteral("G1");
+                    } else {
+                        return QStringLiteral("G1 %1").arg(value1.toUpper());
+                    }
+                }
+                case G28: {
+                    if (value1.isEmpty()) {
+                        return QStringLiteral("G28");
+                    } else {
+                        return QStringLiteral("G28 %1").arg(value1.toUpper());
+                    }
+                  }
+        ... }
+      }
+      </pre>
+    </div>
+    <!-- End of explain -->
+    <br/>
+    <div>
+      <h3>Test Client</h3>
+      <p>For AtCore to work we need a Client to control it. Since we need to test it, we developed, for now, a Test Client that we are using since the beggining. The test client implement all the basic features that we need to control the 3DPrinter. We are
+        using it to validate the way that AtCore is implemented, while Atelier interface isn't ready.
+      </p>
+      <img src="{{ url_for('static', filename='img/atcore/testclient.png') }}">
+
+      <div>
+        <br/>
+        <h3>Using Test Client</h3>
+        <h4>Connect</h4>
+        <p>
+          To use TestClient is simple, you can <a href="{{ url_for('download') }}">install</a> it, and run. We have an automated whay to find the port that the 3DPrinter is using it. So connect your 3DPrinter to your PC and wait for the port to show it
+          here:
+        </p>
+        <img src="{{ url_for('static', filename='img/atcore/serialport.png') }}"></img>
+        <br/>
+        <br/>
+        <p>Now you need to set the baud rate of your printer, in my case is 115200, make sure to set this otherwise the return of your printer will be misunderstood by AtCore and you will not be able to connect it.</p>
+        <img src="{{ url_for('static', filename='img/atcore/baudrate.png') }}">
+        <br/>
+        <br/>
+        <p>After that you can click on connect and check on the log or the status bar if the firmware is loaded correctly and if the printer is connected.</p>
+        <img src="{{ url_for('static', filename='img/atcore/statusbar.png') }}">
+        <br/>
+        <br/>
+        <h4>Temperature</h4>
+        <p>For temperature control, you can change to the second tab, where you can set Bed and HotEnd temperatures, beyond the fan speed.</p>
+        <img src="{{ url_for('static', filename='img/atcore/temperature.png') }}">
+        <br/>
+        <br/>
+        <h4>Temperature Plot</h4>
+        <p> When everything is working, your printer will be checked every 5 seconds for bed and extruder temperatures and it will be show on the plot.</p>
+        <img src="{{ url_for('static', filename='img/atcore/plot.png') }}">
+        <br/>
+        <br/>
+        <h4>Axis Movement</h4>
+        <p>For moving of the axis you can set how much do you want to move on this control. If you want to home one or all axis, you have buttons on your dispose to do it.</p>
+        <img src="{{ url_for('static', filename='img/atcore/home.png') }}">
+        <br/>
+        <br/>
+        <h4>To Print</h4>
+        <p>To print a GCode you need to click on Print File so you can load the GCode, just after you click on 'Ok' the print job it will start and a progress bar will be show below the log.</p>
+        <img src="{{ url_for('static', filename='img/atcore/printfile.png') }}">
+        <br/>
+        <br/>
+        <p>You have a few more features on the Print tab:
+          <ul>
+            <li>Emergency Stop: Obviosly to Stop your printer.</li>
+            <li>On Pause: Based on the variety of printers, you can set your own Pause command, this is handy if you want to do a pause and change filament or do any thing that you want to. The On Pause action will work when you hit Pause Print button. You
+              can send a lot of commands separed by a comma.
+              <p><img src="{{ url_for('static', filename='img/atcore/whileprinting.png') }}"></p>
+            </li>
+            <li>Control the Print speed and Flow.</li>
+          </ul>
+        </p>
+        <h4>Push GCode</h4>
+        <p>For last but not least on the Command tab you have tools to push a GCode command by hand and Show Message where you can push any message that you want to show on the LCD of your printer. </p>
+        <img src="{{ url_for('static', filename='img/atcore/pushgcode.png') }}">
+      </div>
+      <br/>
+      <br/>
+      <h4>Now have fun! And give us feedback!</h4>
+      <img src="{{ url_for('static', filename='img/atcore/testclientconnected.png') }}">
+    </div>
+    <!-- End of Test Client -->
+  </div>
+  <!-- End of AtCore -->
 </div>
 {% endblock content %}

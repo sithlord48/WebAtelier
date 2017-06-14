@@ -10,6 +10,8 @@ setup(
     license='GPLV3',
     packages=['atelier'],
     install_requires=[
-        'flask'
+        'Flask==0.12.1',
+        'gunicorn==19.6.0',
+        'psycopg2==2.6.2',
     ],
 )

@@ -5,6 +5,11 @@ from flask import Flask, render_template, send_from_directory
 #Init Flask
 app = Flask(__name__)
 
+@app.errorhandler(400)
+def bad_request(e):
+    print(e)
+    return render_template('400.html')
+
 @app.errorhandler(404)
 def page_not_found(e):
     print(e)

@@ -13,10 +13,6 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/blog')
-def blog():
-    return render_template('blog.html')
-
 @app.route('/download')
 def download():
     return render_template('download.html')

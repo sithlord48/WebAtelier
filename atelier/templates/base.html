@@ -66,7 +66,7 @@
               <li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url_for('download') }}">Download</a></li>
               <li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url_for('documentation') }}">Documentation</a></li>
               <li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url_for('contact') }}">Contact</a></li>
-              <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#">Support us</a></li>
+              <li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url_for('supportus') }}">Support us</a></li>
             </ul>
           </div>
         </div>
@@ -96,7 +96,7 @@
         </div>
         <div>
           <a class="footer-list-link" href="https://kde.org">
-            <img class="logo-img logo-img-main" src="{{ url_for('static', filename='img/atelierlogo/kde-mini.png') }}" alt="KDE Logo"> | A KDE Application
+            <img class="logo-img logo-img-main" src="{{ url_for('static', filename='img/atelier/kde-mini.png') }}" alt="KDE Logo"> | A KDE Application
           </a>
         </div>
       </div>

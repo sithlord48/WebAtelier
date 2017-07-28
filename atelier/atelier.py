@@ -25,6 +25,10 @@ def contact():
 def documentation():
     return render_template('documentation.html')
 
+@app.route('/supportus')
+def supportus():
+    return render_template('supportus.html')
+
 
 
 if __name__ == "__main__":

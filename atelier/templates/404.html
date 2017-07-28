@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+<br/>
+<div class="content-lg container">
+  <div class="col-sm-10">
+    <h2>404 - Not Found</h2>
+    <p>
+      Sorry, this url does not exist.
+    </p>
+    <div><img src="{{ url_for('static', filename='img/konqi/konqi-app-dev.png') }}" /></div>
+  </div>
+</div>
+{% endblock content %}

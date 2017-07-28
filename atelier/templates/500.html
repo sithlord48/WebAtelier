@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+<div class="content-lh container">
+  <div class="col-sm-10">
+    <h2>500 - Internal Server Error</h2>
+    <p>
+      No page was returned from the server. Everyone is lost and confused... Sorry
+    </p>
+    <div><img src="{{ url_for('static', filename='img/konqi/konqi-app-dev.png') }}" /></div>
+  </div>
+</div>
+{% endblock content %}

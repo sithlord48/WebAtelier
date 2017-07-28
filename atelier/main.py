@@ -51,5 +51,5 @@ def download_binaries(filename):
             'atcore-binaries/windows/',filename, as_attachment=True)
 
 
-if __name__ == "__main__":
+def main():
     app.run(debug=True)

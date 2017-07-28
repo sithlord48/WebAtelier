@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='Atelier',
@@ -8,10 +8,14 @@ setup(
     author='Lays Rodrigues',
     author_email='laysrodriguessilva@gmail.com',
     license='GPLV3',
-    packages=['atelier'],
+    packages=find_packages(exclude=['tests']),
     install_requires=[
         'Flask==0.12.1',
         'gunicorn==19.6.0',
-        'psycopg2==2.6.2',
     ],
+    entry_points={
+        'console_scripts': [
+            'atelier=atelier.main:main'
+        ]
+    }
 )

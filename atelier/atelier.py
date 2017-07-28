@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 
 #Init Flask
 app = Flask(__name__)
@@ -39,6 +39,11 @@ def documentation():
 def supportus():
     return render_template('supportus.html')
 
+@app.route('/files/<path:filename>', methods=['GET'])
+def download_binaries(filename):
+    if 'exe' in filename:
+        return send_from_directory(
+            'atcore-binaries/windows/',filename, as_attachment=True)
 
 
 if __name__ == "__main__":

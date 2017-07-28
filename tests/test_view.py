@@ -28,10 +28,6 @@ class TestView(unittest.TestCase):
             result = self.app.get('/contact')
             self.assertEqual(result.status_code, 200)
 
-        def test_raise_404(self):
-            result = self.app.get('/jaja')
-            self.assertEqual(result.status_code, 404)
-
 
 if __name__ == '__main__':
     unittest.main()

@@ -11,6 +11,6 @@ setup(
     packages=['atelier'],
     install_requires=[
         'Flask==0.12.1',
-        'gunicorn==19.6.0',
+        # 'gunicorn==19.6.0',
     ],
 )

@@ -12,6 +12,5 @@ setup(
     install_requires=[
         'Flask==0.12.1',
         'gunicorn==19.6.0',
-        'psycopg2==2.6.2',
     ],
 )

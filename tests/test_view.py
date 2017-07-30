@@ -21,12 +21,28 @@ class TestView(unittest.TestCase):
             result = self.app.get('/about')
             self.assertEqual(result.status_code, 200)
 
-        def test_blog_status_code(self):
-            result = self.app.get('/blog')
-            self.assertEqual(result.status_code, 200)
-
         def test_contact_status_code(self):
             result = self.app.get('/contact')
+            self.assertEqual(result.status_code, 200)
+
+        def test_download_status_code(self):
+            result = self.app.get('/download')
+            self.assertEqual(result.status_code, 200)
+
+        def test_documentation_status_code(self):
+            result = self.app.get('/documenation')
+            self.assertEqual(result.status_code, 200)
+
+        def test_atelier_status_code(self):
+            result = self.app.get('/documentation/atelier')
+            self.assertEqual(result.status_code, 200)
+
+        def test_atcore_status_code(self):
+            result = self.app.get('/documentation/atcore')
+            self.assertEqual(result.status_code, 200)
+
+        def test_supportus_status_code(self):
+            result = self.app.get('/supportus')
             self.assertEqual(result.status_code, 200)
 
 

@@ -23,7 +23,95 @@
         <img class="img-responsive" src="{{ url_for('static', filename='img/atelier/atelierlogo.png') }}" alt="Atelier Logo">
       </div>
     </div>
+    <!--========== PAGE LAYOUT ==========-->
+    <!-- Service -->
+    <div class="bg-color-sky-light" data-auto-height="true">
+      <div class="content-lg container">
+        <div class="row row-space-1 margin-b-2">
+          <div class="col-sm-4 sm-margin-b-2">
+            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+              <div class="service" data-height="height">
+                <div class="service-element">
+                  <i class="service-icon fa fa-code"></i>
+                </div>
+                <div class="service-info">
+                  <h3>Art Of Coding</h3>
+                  <p class="margin-b-5">Using the best skills of programming to give you confidence</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 sm-margin-b-2">
+            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+              <div class="service" data-height="height">
+                <div class="service-info">
+                  <h3>C++</h3>
+                  <p class="margin-b-5">"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off." Bjarne Stroustrup</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+              <div class="service" data-height="height">
+                <div class="service-info">
+                  <h3>Qt</h3>
+                  <p class="margin-b-5">Cross-platform development with Qt is the faster, smarter way to create innovative UIs, applications & embedded devices. </p>
+                </div>
+                <a href="https://qt.io" class="content-wrapper-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// end row -->
 
+        <div class="row row-space-1">
+          <div class="col-sm-4 sm-margin-b-2">
+            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
+              <div class="service" data-height="height">
+                <div class="service-element">
+                  <i class="service-icon icon-notebook"></i>
+                </div>
+                <div class="service-info">
+                  <h3>Useful Documentation</h3>
+                  <p class="margin-b-5">Documentation simple and clean to guide you step by step.</p>
+                </div>
+                <a href="{{ url_for('documentation') }}" class="content-wrapper-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 sm-margin-b-2">
+            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
+              <div class="service" data-height="height">
+                <div class="service-element">
+                  <i class="service-icon fa fa-lock"></i>
+                </div>
+                <div class="service-info">
+                  <h3>Security</h3>
+                  <p class="margin-b-5">Preventing your 3DPrinter from malfunctions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
+              <div class="service" data-height="height">
+                <div class="service-element">
+                  <i class="service-icon fa fa-desktop"></i>
+                </div>
+                <div class="service-info">
+                  <h3>Compatibility</h3>
+                  <p class="margin-b-5">Linux, Windows and MacOS: Portability is our goal.</p>
+                </div>
+                <a href="{{ url_for('download') }}" class="content-wrapper-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--// end row -->
+      </div>
+    </div>
+    <!-- End Service -->
     <div class="row">
       <div class="col-sm-7 sm-margin-b-50">
         <div class="margin-b-30">

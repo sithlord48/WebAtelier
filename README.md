@@ -39,7 +39,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/virtualenv/bin/atelier
+ExecStart=/virtualenv/bin/atelier --port 8000
 
 [Install]
 WantedBy=multi-user.target

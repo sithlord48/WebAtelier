@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import argparse
 from flask import Flask, render_template, send_from_directory
 
-# Init Flask
+
+parser = argparse.ArgumentParser(description='Atelier Port')
+parser.add_argument('--port', type=int, default=8000)
+args=parser.parse_args()
+
 app = Flask(__name__)
 
 
@@ -62,7 +67,7 @@ def download_binaries(filename):
 
 
 def main():
-    app.run(debug=True, port=3030)
+    app.run(debug=True, port=args.port)
 
 
 if __name__ == "__main__":

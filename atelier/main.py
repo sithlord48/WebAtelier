@@ -54,6 +54,16 @@ def documentation():
     return render_template('documentation.html')
 
 
+@app.route('/documentation/atcore')
+def atcore():
+    return render_template('atcore.html')
+
+
+@app.route('/documentation/atelier')
+def atelier():
+    return render_template('atelier.html')
+
+
 @app.route('/supportus')
 def supportus():
     return render_template('supportus.html')

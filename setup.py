@@ -14,4 +14,9 @@ setup(
         'Flask==0.12.1',
         # 'gunicorn==19.6.0',
     ],
+    entry_points={
+        'console_scripts':[
+            'atelier = atelier.main:main'
+        ],
+    }
 )

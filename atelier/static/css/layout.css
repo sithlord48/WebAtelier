@@ -266,14 +266,16 @@ fieldset[disabled] .btn-theme {
 
 .btn-base-bg {
   color: #fff;
-  background: #17bed2;
+  background: #1f4190;
   border-color: transparent;
   border-width: 0;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 .btn-base-bg:hover, .btn-base-bg:focus, .btn-base-bg.focus {
   color: #fff;
-  background: #63cbd7;
+  background: #5A74B0;
   border-color: transparent;
 }
 

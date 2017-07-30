@@ -55,8 +55,13 @@
                             <span class="sr-only">Toggle navigation</span>
                             <span class="toggle-icon"></span>
                         </button>
+          <div class="logo">
+            <a class="logo-wrap" href="{{ url_for('index') }}">
+              <img class="logo-img logo-img-main" src="{{ url_for('static', filename='img/atelier/atelierlogo.png') }}" alt="Atelier Logo">
+              <img class="logo-img logo-img-active" src="{{ url_for('static', filename='img/atelier/atelierlogo.png') }}" alt="Atelier Logo">
+            </a>
+          </div>
         </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse nav-collapse">
           <div class="menu-container">

@@ -1,5 +1,6 @@
 ## Atelier
 [![Build Status](https://travis-ci.org/lays147/WebAtelier.svg?branch=master)](https://travis-ci.org/lays147/WebAtelier)
+[![Code Health](https://landscape.io/github/lays147/WebAtelier/master/landscape.svg?style=flat)](https://landscape.io/github/lays147/WebAtelier/master)
 <br/>
 --
 This is the website for [Atelier](https://atelier.kde.org), the printer host of 3DPrinting from KDE Community.

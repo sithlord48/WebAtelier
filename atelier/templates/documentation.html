@@ -12,9 +12,10 @@
           <img class="img-responsive" src="{{ url_for('static', filename='img/atcore/atcorelogo.png') }}" alt="AtCore Logo">
         </div>
       </div>
-      <h4><a href="#">AtCore</a> <span class="text-uppercase margin-l-20">API</span></h4>
+      <h4>AtCore <span class="text-uppercase margin-l-20">API</span></h4>
       <p>AtCore is the core of Atelier project. It manages all serial communication with the 3DPrinter.</p>
-      <a class="link" href="{{ url_for('atcore') }}">Read More</a>
+      <a class="link" href="{{ url_for('atcore') }}">How to Use</a><br />
+      <a class="link" href="{{url_for('static', filename='atcore_doc/index.html')}}">Api Documentation</a>
     </div>
     <!-- End Latest Products -->
 
@@ -25,7 +26,7 @@
           <img class="img-responsive" src="{{ url_for('static', filename='img/atelier/atelierlogo.png') }}" alt="Atelier Logo">
         </div>
       </div>
-      <h4><a href="#">Atelier</a> <span class="text-uppercase margin-l-20">Client</span></h4>
+      <h4>Atelier<span class="text-uppercase margin-l-20">Client</span></h4>
       <p>Atelier is a client of AtCore with all features that you need: 3DView, GCode edition and much more.</p>
       <a class="link" href="{{ url_for('atelier') }}">Read More</a>
     </div>

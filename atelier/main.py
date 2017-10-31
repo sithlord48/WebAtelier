@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import argparse
 from flask import Flask, render_template, send_from_directory
-
-
-parser = argparse.ArgumentParser(description='Atelier Port')
-parser.add_argument('--port', type=int, default=8000)
-args=parser.parse_args()
 
 app = Flask(__name__)
 

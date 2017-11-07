@@ -63,13 +63,6 @@ def supportus():
     return render_template('supportus.html')
 
 
-@app.route('/files/<path:filename>', methods=['GET'])
-def download_binaries(filename):
-    if 'exe' in filename:
-        return send_from_directory(
-            'atcore-binaries/windows/', filename, as_attachment=True)
-
-
 def main():
     app.run(debug=True, port=args.port)
 

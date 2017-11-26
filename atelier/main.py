@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -64,7 +64,7 @@ def supportus():
 
 
 def main():
-    app.run(debug=True, port=args.port)
+    app.run(debug=True)
 
 
 if __name__ == "__main__":

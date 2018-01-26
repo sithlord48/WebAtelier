@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['_5fok',['_ok',['../struct_i_firmware_private.html#a3b2a8ee9774d446ce03a0495fa5c84e4',1,'IFirmwarePrivate']]],
   ['_5frawdata',['_rawData',['../class_serial_layer_private.html#a1e309f52485d1c68197efdb69e71b517',1,'SerialLayerPrivate']]],
   ['_5frbytecommands',['_rByteCommands',['../class_serial_layer_private.html#a54acfbdf647eccfa7bcc454f5fa1d438',1,'SerialLayerPrivate']]],
   ['_5fsbytecommands',['_sByteCommands',['../class_serial_layer_private.html#a8823cbdb4c6e03efe9ee3716a6014c61',1,'SerialLayerPrivate']]],

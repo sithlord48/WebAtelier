@@ -13,6 +13,7 @@ var searchData=
   ['setextrudertemperature',['setExtruderTemperature',['../class_temperature.html#a630b697e4727bd5c0924f789e83e773a',1,'Temperature']]],
   ['setfanspeed',['setFanSpeed',['../class_at_core.html#adfd81f01455433d54d8cd4ecd3b71220',1,'AtCore']]],
   ['setflowrate',['setFlowRate',['../class_at_core.html#aae287889bceadc00a47ebd638eb6015f',1,'AtCore']]],
+  ['setidlehold',['setIdleHold',['../class_at_core.html#a277ae2edf34206732fb78a6420918db0',1,'AtCore']]],
   ['setprinterspeed',['setPrinterSpeed',['../class_at_core.html#aa931ca35be821ff7613cadf5838eaf01',1,'AtCore']]],
   ['setrelativeposition',['setRelativePosition',['../class_at_core.html#a9c111a5ebbaea6731a62eaf7ba1c32a2',1,'AtCore']]],
   ['setserialtimerinterval',['setSerialTimerInterval',['../class_at_core.html#a19dcae4735b965e2b57f261443136067',1,'AtCore']]],

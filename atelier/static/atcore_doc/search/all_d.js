@@ -1,9 +1,10 @@
 var searchData=
 [
   ['parent',['parent',['../struct_i_firmware_private.html#a1502f6b98538dfb1a728800686a643b4',1,'IFirmwarePrivate']]],
-  ['pause',['pause',['../class_at_core.html#aba51a189c08ce84354229a5671a88f1f',1,'AtCore::pause(const QString &amp;pauseActions)'],['../class_at_core.html#a20cf87d39ee4ab339964f2a20a0bb326a17fc98c0b1b279aa952d73f0b3de3f82',1,'AtCore::PAUSE()']]],
+  ['pause',['PAUSE',['../class_at_core.html#a20cf87d39ee4ab339964f2a20a0bb326a17fc98c0b1b279aa952d73f0b3de3f82',1,'AtCore::PAUSE()'],['../class_at_core.html#aba51a189c08ce84354229a5671a88f1f',1,'AtCore::pause(const QString &amp;pauseActions)']]],
   ['percentage',['percentage',['../struct_at_core_private.html#a467b5f4e8e5e18449dbfc43ba71500ce',1,'AtCorePrivate']]],
   ['percentageprinted',['percentagePrinted',['../class_at_core.html#a7e716be426373c0301acb542549c13c4',1,'AtCore']]],
+  ['plugindir',['pluginDir',['../namespace_at_core_directories.html#a7506532df5e26e3341c09381020390d3',1,'AtCoreDirectories']]],
   ['pluginloader',['pluginLoader',['../struct_at_core_private.html#ac521105f5446516a257ac95582bbf3cd',1,'AtCorePrivate']]],
   ['plugins',['plugins',['../struct_at_core_private.html#a6d231a410d8585d21b42accb8ca1ffc2',1,'AtCorePrivate']]],
   ['pluginsdir',['pluginsDir',['../struct_at_core_private.html#a2c2fc709a69be61768665ba4c65a23ec',1,'AtCorePrivate']]],

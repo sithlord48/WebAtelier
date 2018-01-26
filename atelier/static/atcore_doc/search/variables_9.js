@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['serial',['serial',['../struct_at_core_private.html#a496d52a74bf7ace6e5a1a4369a3bda15',1,'AtCorePrivate']]],
-  ['serialports',['serialPorts',['../struct_at_core_private.html#a65536260970f6111f51021ab6a84bea4',1,'AtCorePrivate']]],
-  ['serialtimer',['serialTimer',['../struct_at_core_private.html#a4efdc972ba4cbb103ebbdd1ca9879a40',1,'AtCorePrivate']]],
-  ['state',['state',['../class_print_thread_private.html#a443773664f0cf762d3f313efd0bd2723',1,'PrintThreadPrivate']]],
-  ['stillsize',['stillSize',['../class_print_thread_private.html#a9d6f05dbf76c0b07c7c8708f94be813a',1,'PrintThreadPrivate']]]
+  ['qt_5fsection_5falignment_5fdummy',['qt_section_alignment_dummy',['../moc__aprinterplugin_8cpp.html#a5224d929b42accc7ffdaf4969e5eca8c',1,'qt_section_alignment_dummy():&#160;moc_aprinterplugin.cpp'],['../moc__grblplugin_8cpp.html#a5224d929b42accc7ffdaf4969e5eca8c',1,'qt_section_alignment_dummy():&#160;moc_grblplugin.cpp'],['../moc__marlinplugin_8cpp.html#a5224d929b42accc7ffdaf4969e5eca8c',1,'qt_section_alignment_dummy():&#160;moc_marlinplugin.cpp'],['../moc__repetierplugin_8cpp.html#a5224d929b42accc7ffdaf4969e5eca8c',1,'qt_section_alignment_dummy():&#160;moc_repetierplugin.cpp'],['../moc__smoothieplugin_8cpp.html#a5224d929b42accc7ffdaf4969e5eca8c',1,'qt_section_alignment_dummy():&#160;moc_smoothieplugin.cpp'],['../moc__sprinterplugin_8cpp.html#a5224d929b42accc7ffdaf4969e5eca8c',1,'qt_section_alignment_dummy():&#160;moc_sprinterplugin.cpp'],['../moc__teacupplugin_8cpp.html#a5224d929b42accc7ffdaf4969e5eca8c',1,'qt_section_alignment_dummy():&#160;moc_teacupplugin.cpp']]]
 ];

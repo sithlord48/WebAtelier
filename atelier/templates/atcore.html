@@ -2,57 +2,11 @@
 <div class="content-lg container">
   <div class="col-sm-10">
     <h2 id="atcore">AtCore</h2>
-    <p>AtCore is the API that all the work on serial communication. We work with the thinking were every firmware is a plugin where we handle the small differences between them.</p>
-    <div id="atcore-intro">
-      <h3>Introduction</3>
-      <p>Inside AtCore we have a dictionary with all the GCode commands and that they do when called. So far we implemented methods that handle the most used GCode commands.</p>
-      <p>The below snnipet of code show one method that we use on logging, where every command sent has it's own string.</p>
-      <pre class="lang=cpp prettyprint">
-        QString GCode::toString(GCommands gcode) {
-          switch (gcode) {
-            case G0://Teacup - Sprinter - Marlin - Repetier - Smoothie - RepRap Firmware - MakerBot
-              return QObject::tr("G0: Rapid linear move");
-            case G1://Teacup - Sprinter - Marlin - Repetier - Smoothie - RepRap Firmware
-              return QObject::tr("G1: Linear move");
-          ...
-          }
-        }
-      </pre>
-      <p>The next snippet of code is the formated GCode that will be pushed through the serial port. If the GCode needs some parameter, we format it and return the complete string to be pushed.</p>
-      <pre class="lang=cpp prettyprint">
-       QString GCode::toCommand(GCommands gcode, const QString &value1) {
-              switch (gcode) {
-                case G0: {
-                    if (value1.isEmpty()) {
-                        return QStringLiteral("G0");
-                    } else {
-                        return QStringLiteral("G0 %1").arg(value1.toUpper());
-                    }
-                }
-                case G1: {
-                    if (value1.isEmpty()) {
-                        return QStringLiteral("G1");
-                    } else {
-                        return QStringLiteral("G1 %1").arg(value1.toUpper());
-                    }
-                }
-                case G28: {
-                    if (value1.isEmpty()) {
-                        return QStringLiteral("G28");
-                    } else {
-                        return QStringLiteral("G28 %1").arg(value1.toUpper());
-                    }
-                  }
-        ... }
-      }
-      </pre>
-    </div>
-    <!-- End of explain -->
-    <br/>
+    <p>AtCore is the API that does all the communication with the 3dPrinter. It is designed so that each printer firmware has its own plugin. This allows us to workout the lower level differences between various firmwares allowing us to providing the same features across all firmwares.</p>
+    
     <div>
       <h3>Test Client</h3>
-      <p>For AtCore to work we need a client to control it. Since we need to test it, we developed, for now, a Test Client that we are using since the beggining. The Test Client implements all the basic features that we need to control the 3DPrinter. We
-        are using it to validate the way that AtCore is implemented, while Atelier interface isn't ready.
+      <p>The Test Client is provided with AtCore. The Test Client implements all the features of AtCore for the purpose of providing way for us to test AtCore.
       </p>
       <img src="{{ url_for('static', filename='img/atcore/testclient.png') }}">
 
@@ -61,7 +15,7 @@
         <h3>Using Test Client</h3>
         <h4>Connect</h4>
         <p>
-          To use Test Client is simple, you can <a href="{{ url_for('download') }}">install</a> it, and run. We have an automated whay to find the port that the 3DPrinter is using it. So connect your 3DPrinter to your PC and wait for the port to show
+          To use Test Client is simple, you can <a href="{{ url_for('download') }}">install</a> it, and run. We have an automated way to find the port that the 3DPrinter is using it. So connect your 3DPrinter to your PC and wait for the port to show
           it here:
         </p>
         <img src="{{ url_for('static', filename='img/atcore/serialport.png') }}"></img>
@@ -71,7 +25,7 @@
         <img src="{{ url_for('static', filename='img/atcore/baudrate.png') }}">
         <br/>
         <br/>
-        <p>After that you can click on connect and check on the log or the status bar if the firmware is loaded correctly and if the printer is connected.</p>
+        <p>After that you can click on connect and check on the log or the status bar to see if the firmware is loaded correctly and if the printer is connected. If AtCore fails to auto detect your firmware you can select on from the list. Most should work with repetier.</p>
         <img src="{{ url_for('static', filename='img/atcore/statusbar.png') }}">
         <br/>
         <br/>
@@ -80,8 +34,8 @@
         <img src="{{ url_for('static', filename='img/atcore/temperature.png') }}">
         <br/>
         <br/>
-        <h4>Temperature Plot</h4>
-        <p> When everything is working, your printer will be checked every 5 seconds for bed and extruder temperatures and it will be show on the plot.</p>
+      <h4>Temperature Timeline</h4>
+        <p> When your printer is connected, AtCore will check every 5 seconds the bed and extruder temperatures. This plot shows the results of those checks.</p>
         <img src="{{ url_for('static', filename='img/atcore/plot.png') }}">
         <br/>
         <br/>
